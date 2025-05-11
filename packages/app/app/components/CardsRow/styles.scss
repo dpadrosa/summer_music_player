@@ -1,0 +1,119 @@
+@use "common.scss";
+
+
+.cardsRowContainer {
+  padding: 1rem;
+}
+
+.headerRow {
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #72e47c;
+}
+
+.glow-text {
+  color: #72e47c;
+  text-shadow: 0 0 5px #72e47c, 0 0 10px #72e47c, 0 0 20px #72e47c;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  width: 1240px;
+  margin: auto;
+}
+
+.searchRow {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.inputFilter {
+  padding: 0.5rem;
+  width: 300px; /* taille moyenne fixée */
+}
+
+.clearButton,
+.scrollButton {
+  padding: 0.5rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.categoryButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.categoryButton {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+.activeCategory {
+  background: rgb(0, 255, 42);
+}
+
+.cardsRow {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.rowCard {
+  display: inline-block;
+  width: 240px;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 2rem;
+  color: #888;
+}
+
+.emptyIcon {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+:global(.neon-border) {
+  box-shadow: 0 0 20px #72e47c;
+  border: 1px solid #72e47c;
+}
+
+
+.layout {
+  display: flex;
+  gap: 1rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 220px;
+}
